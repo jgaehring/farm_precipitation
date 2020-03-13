@@ -5,13 +5,13 @@ module.exports = {
   entry: './src/FieldModule/Weather/js/index.js',
   output: {
     filename: 'index.js',
-    path: path.resolve(__dirname, 'dist/FieldModule/Weather'),
+    path: path.resolve(__dirname, '..', 'dist/FieldModule/Weather'),
   },
   resolve: {
     extensions: ['.js', '.vue', '.json'],
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
-      '@': path.resolve(__dirname, 'src'),
+      '@': path.resolve(__dirname, '..', 'src'),
     },
   },
   module: {
