@@ -5,7 +5,7 @@
       <div class="card-header">Record a weather event</div>
       <div class="card-body">
 
-        <date-and-time-form
+        <farm-date-time-form
           :timestamp="currentLog.timestamp"
           @input="updateCurrentLog('timestamp', $event)"/>
 
@@ -93,9 +93,9 @@
                     .toLocaleTimeString(undefined, { timeStyle: 'short' })
                 }}
               </td>
-              <td>{{`${log.quantity[0].value} ${unitAbbr}`}}</td>
-              <td v-if="log.quantity[0].label === 'snow'"><icon-snowflake/></td>
-              <td v-if="log.quantity[0].label === 'rain'"><icon-raindrops/></td>
+              <td v-if="log.quantity[0]">{{`${log.quantity[0].value} ${unitAbbr}`}}</td>
+              <td v-if="log.quantity[0] && log.quantity[0].label === 'snow'"><icon-snowflake/></td>
+              <td v-if="log.quantity[0] && log.quantity[0].label === 'rain'"><icon-raindrops/></td>
             </tr>
           </tbody>
         </table>
@@ -106,20 +106,10 @@
 </template>
 
 <script>
-import parseNotes from '@/utils/parseNotes';
-import DateAndTimeForm from '@/components/DateAndTimeForm';
-import IconAddCircle from '@/components/icons/icon-add-circle';
-import IconRaindrops from '@/components/icons/icon-raindrops';
-import IconSnowflake from '@/components/icons/icon-snowflake';
+const { parseNotes } = window.farmOS.utils;
 
 export default {
   name: 'Weather',
-  components: {
-    DateAndTimeForm,
-    IconAddCircle,
-    IconRaindrops,
-    IconSnowflake,
-  },
   data: () => ({
     currentLogID: null,
     time: {

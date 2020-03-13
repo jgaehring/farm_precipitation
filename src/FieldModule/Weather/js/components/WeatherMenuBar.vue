@@ -1,22 +1,18 @@
 <template>
-  <menu-bar :more="false">
+  <farm-menu-bar :more="false">
     <template #left-menu>
       <li @click="$emit('toggleDrawer')">
         <icon-menu/>
       </li>
       <li>Weather</li>
     </template>
-  </menu-bar>
+  </farm-menu-bar>
 </template>
 
 <script>
-import MenuBar from '@/components/MenuBar';
-import IconMenu from '@/components/icons/icon-menu';
-
 export default {
   name: 'WeatherMenuBar',
-  components: { MenuBar, IconMenu },
-}
+};
 </script>
 
 <style>

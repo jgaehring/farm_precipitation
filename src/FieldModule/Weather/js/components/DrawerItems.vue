@@ -1,22 +1,10 @@
 <template>
-  <drawer-list>
+  <farm-drawer-list>
     <router-link :to="{ name: 'weather-form' }">
-      <drawer-list-item>Record Weather Event</drawer-list-item>
+      <farm-drawer-list-item>Record Weather Event</farm-drawer-list-item>
     </router-link>
-  </drawer-list>
+  </farm-drawer-list>
 </template>
-
-<script>
-import DrawerList from '@/components/DrawerList';
-import DrawerListItem from '@/components/DrawerListItem';
-
-export default {
-  components: {
-    DrawerList,
-    DrawerListItem,
-  },
-}
-</script>
 
 <style >
   a, a:hover {
