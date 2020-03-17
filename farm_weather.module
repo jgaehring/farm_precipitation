@@ -1,4 +1,19 @@
-function farm_eggs_farm_client_module_info() {
+<?php
 
+/**
+ * Weather Module
+ */
+
+/**
+ * Implements hook_farm_client_module_info()
+ */
+function farm_weather_farm_client_module_info() {
+  return array(
+    'weather' => array(
+      'name' => 'weather-form',
+      'label' => t('Weather Field Module'),
+      'js' => drupal_get_path('module', 'farm_weather') . '/dist/FieldModule/Weather/index.js',
+    ),
+  );
 }
 
