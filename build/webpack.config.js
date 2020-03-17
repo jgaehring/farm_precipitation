@@ -46,5 +46,10 @@ module.exports = {
   },
   plugins: [
     new VueLoaderPlugin()
-  ]
+  ],
+  optimization: {
+    splitChunks: {
+      chunks: 'all',
+    },
+  },
 }
