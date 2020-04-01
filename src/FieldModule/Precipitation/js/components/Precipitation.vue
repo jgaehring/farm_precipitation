@@ -109,7 +109,7 @@
 const { parseNotes } = window.farmOS.utils;
 
 export default {
-  name: 'Weather',
+  name: 'Precipitation',
   data: () => ({
     currentLogID: null,
     time: {

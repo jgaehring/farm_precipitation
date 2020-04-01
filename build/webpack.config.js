@@ -2,10 +2,10 @@ const path = require('path')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 module.exports = {
-  entry: './src/FieldModule/Weather/js/index.js',
+  entry: './src/FieldModule/Precipitation/js/index.js',
   output: {
     filename: 'index.js',
-    path: path.resolve(__dirname, '..', 'dist/FieldModule/Weather'),
+    path: path.resolve(__dirname, '..', 'dist/FieldModule/Precipitation'),
   },
   resolve: {
     extensions: ['.js', '.vue', '.json'],

@@ -1,0 +1,4 @@
+name = Precipitation Field Module
+description = A field module for recording precipitation.
+core = 7.x
+dependencies[] = farm_client

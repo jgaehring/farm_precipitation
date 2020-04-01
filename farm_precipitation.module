@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * Precipitation Field Module
+ */
+
+/**
+ * Implements hook_farm_client_module_info()
+ */
+function farm_precipitation_farm_client_module_info() {
+  return array(
+    'precipitation' => array(
+      'name' => 'precipitation',
+      'label' => t('Precipitation Field Module'),
+      'js' => drupal_get_path('module', 'farm_precipitation') . '/dist/FieldModule/Precipitation/index.js',
+    ),
+  );
+}
+

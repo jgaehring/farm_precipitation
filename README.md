@@ -1,3 +1,3 @@
-# Weather Field Module
+# Precipitation Field Module
 
 more details to come...

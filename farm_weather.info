@@ -1,4 +1,0 @@
-name = Weather Field Module
-description = A field module for recording weather events.
-core = 7.x
-dependencies[] = farm_client

@@ -4,14 +4,14 @@
       <li @click="$emit('toggleDrawer')">
         <icon-menu/>
       </li>
-      <li>Weather</li>
+      <li>Precipitation</li>
     </template>
   </farm-menu-bar>
 </template>
 
 <script>
 export default {
-  name: 'WeatherMenuBar',
+  name: 'PrecipitationMenuBar',
 };
 </script>
 

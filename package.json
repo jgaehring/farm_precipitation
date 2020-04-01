@@ -1,7 +1,7 @@
 {
-  "name": "farm_weather",
+  "name": "farm_precipitation",
   "version": "0.0.1",
-  "description": "A field module for adding weather logs via farmOS Field Kit.",
+  "description": "A field module for adding precipitation logs via farmOS Field Kit.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jgaehring/farm_weather.git"
+    "url": "git+https://github.com/jgaehring/farm_precipitation.git"
   },
   "author": "Jamie Gaehring",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/jgaehring/farm_weather/issues"
+    "url": "https://github.com/jgaehring/farm_precipitation/issues"
   },
-  "homepage": "https://github.com/jgaehring/farm_weather#readme",
+  "homepage": "https://github.com/jgaehring/farm_precipitation#readme",
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.8.7",

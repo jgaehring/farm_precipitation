@@ -1,10 +1,10 @@
 <template>
   <farm-widget>
-    <h4 class="card-title">Weather Widget</h4>
+    <h4 class="card-title">Precipitation Module</h4>
     <h5
-      @click="openWeather"
+      @click="openPrecipitation"
       class="clickable">
-      Log Weather
+      Record Precipitation
       <IconRaindrops class="inline-svg"/>
     </h5>
   </farm-widget>
@@ -13,8 +13,8 @@
 <script>
 export default {
   methods: {
-    openWeather() {
-      this.$router.push({ path: '/weather' });
+    openPrecipitation() {
+      this.$router.push({ path: '/precipitation' });
     },
   },
 };
