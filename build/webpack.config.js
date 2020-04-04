@@ -11,8 +11,9 @@ module.exports = {
     extensions: ['.js', '.vue', '.json'],
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
-      '@': path.resolve(__dirname, '..', 'src'),
+      '@': path.join(__dirname, '..', 'src'),
     },
+    symlinks: false
   },
   module: {
     rules: [
@@ -24,7 +25,15 @@ module.exports = {
       // AND `<script>` blocks in `.vue` files
       {
         test: /\.js$/,
-        loader: 'babel-loader'
+        loader: 'babel-loader',
+        include: [
+          path.join(__dirname, '..', 'src'),
+          path.join(__dirname, '..', 'node_modules/webpack-dev-server/client'),
+          path.join(__dirname, '..', 'node_modules/farmos-client/src'),
+        ],
+        options: {
+          plugins: ['@babel/plugin-proposal-optional-chaining']
+        }
       },
       // this will apply to both plain `.css` files
       // AND `<style>` blocks in `.vue` files
