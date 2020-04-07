@@ -1,11 +1,10 @@
 import Precipitation from './components/Precipitation';
 import PrecipitationMenuBar from './components/PrecipitationMenuBar';
-import PrecipitationDrawerItems from './components/PrecipitationDrawerItems';
 import PrecipitationWidget from './components/PrecipitationWidget';
 
 export default {
   name: 'precipitation',
-  drawer: PrecipitationDrawerItems,
+  label: 'Precipitation',
   widget: PrecipitationWidget,
   routes: [
     {
