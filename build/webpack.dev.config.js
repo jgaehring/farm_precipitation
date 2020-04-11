@@ -14,6 +14,7 @@ module.exports = merge(baseConfig, {
     filename: '[name].js',
     path: __dirname
   },
+  devtool: 'cheap-module-eval-source-map',
   devServer: {
     contentBase: false, 
     proxy: [{
