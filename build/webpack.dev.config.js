@@ -6,7 +6,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = merge(baseConfig, {
   mode: 'development',
-  // context: (__dirname, 'node_modules/farmos-client'),
   entry: {
     app: './build/index.js'
   },
