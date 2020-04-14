@@ -15,6 +15,7 @@ module.exports = merge(baseConfig, {
   },
   devtool: 'cheap-module-eval-source-map',
   devServer: {
+    clientLogLevel: 'warning',
     contentBase: false, 
     proxy: [{
       logLevel: 'debug',
