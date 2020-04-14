@@ -48,7 +48,8 @@ const devConfig = merge(baseConfig, {
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: 'build/index.dev.html',
-      inject: true
+      inject: true,
+      favicon: 'node_modules/farmos-client/favicon.ico'
     }),
   ]
 })
