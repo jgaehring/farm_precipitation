@@ -1,11 +1,8 @@
 <template>
-  <div>
-      <h5
-        @click="openPrecipitation"
-        class="clickable">
-        Record Precipitation
-        <IconRaindrops class="inline-svg"/>
-      </h5>
+  <div @click="openPrecipitation">
+    <farm-stack>
+      <farm-inline><h2>View all</h2></farm-inline>
+    </farm-stack>
   </div>
 </template>
 
@@ -21,10 +18,5 @@ export default {
 </script>
 
 <style scoped>
-
-.clickable:hover {
-  background-color: #eee;
-  cursor: pointer;
-}
 
 </style>
