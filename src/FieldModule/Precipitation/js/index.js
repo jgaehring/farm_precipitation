@@ -1,3 +1,3 @@
-import modConfig from './module.config';
+import mod from './module';
 
-window.farmOS.modules[modConfig.name] = modConfig;
+window.farmOS.mountFieldModule(mod);
